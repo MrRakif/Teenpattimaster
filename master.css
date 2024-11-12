@@ -1,0 +1,189 @@
+header {
+    background-color: #0f3153; /* Dark background */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Padding for spacing */
+    text-align: center; /* Center text */
+    font-size: 1.5em; /* Font size */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+.menu-button {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 20px; /* Adjust as needed */
+    font-size: 1.5em; /* Adjust size */
+    color: #e7dddd; /* White color for contrast */
+    
+}
+
+.menu-icon {
+    display: inline-block;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #330707;
+    color:  #086b5c; /* Changed text color for better contrast */
+    text-align: center;
+}
+
+/* Image Styles */
+.container {
+    position: relative; /* Needed for positioning the button */
+    display: inline-block; /* Center the container */
+    margin-bottom: 50px; /* Adjust this value as needed for more space */
+}
+
+.long-image {
+    width: 100%; /* Full width on mobile */
+    height: auto;
+    cursor: pointer;
+    border-radius: 20px; /* Reduced border radius for mobile */
+    transition: transform 0.3s;
+}
+
+/* Keyframes for disco animation */
+@keyframes disco {
+    0% { background-color: #15772c; }
+    14% { background-color: #e91e63; }
+    28% { background-color: #ffeb3b; }
+    42% { background-color: #ff9800; }
+    57% { background-color: #3f51b5; }
+    71% { background-color: #9c27b0; }
+    85% { background-color: #00bcd4; }
+    100% { background-color: #15772c; }
+}
+
+/* Download Button Styles */
+.download-button {
+    position: absolute; /* Position button over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position */
+    padding: 15px 30px; /* Reduced padding for mobile */
+    color: rgb(255, 251, 251);
+    text-decoration: none;
+    border-radius: 20px; /* Reduced border radius for mobile */
+    transition: background-color 0.3s;
+    font-size: 5em; /* Ensured font size is appropriate */
+    animation: disco 1s infinite; /* Apply disco animation */
+}
+
+.download-button:hover {
+    /* Optional: You can change hover effect or keep it the same */
+    background-color: #090de0; /* Slightly smaller scale effect */
+    }
+
+.btn {
+    background-color: rgb(19, 96, 174);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+
+/* Line Breaker Container Styles */
+.line-breaker-container {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-direction: row; /* Align items in a row */
+    justify-content: space-between; /* Space between items */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+/* Small Container Styles */
+.small-container {
+    display: flex; /* Use flexbox for internal layout */
+    align-items: center; /* Center items vertically */
+    background-color: #fff; /* White background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 15px; /* Space around each container */
+    padding: 10px; /* Inner padding for content */
+    width: calc(30% - 30px); /* Responsive width for three items per row */
+    transition: transform 0.3s; /* Smooth transform on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .small-container {
+        width: calc(45% - 30px); /* Two items per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .small-container {
+        width: 100%; /* Full width on small screens */
+    }
+}
+
+/* Image Styles */
+.small-image {
+    width: 80px; /* Fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+    margin-right: 15px; /* Space between image and content */
+}
+
+/* Content Styles */
+.content {
+    flex-grow: 1;
+}
+  .footer {
+    background-color: #222; /* Dark background for contrast */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Padding for spacing */
+    text-align: center; /* Center text */
+    position: relative; /* Positioning context */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+}
+
+.footer-content {
+    max-width: 1200px; /* Limit width for larger screens */
+    margin: 0 auto; /* Center align */
+}
+
+.footer-links {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 10px 0 0; /* Margin for spacing */
+}
+
+.footer-links li {
+    display: inline; /* Inline display for horizontal layout */
+    margin: 0 15px; /* Space between links */
+}
+
+.footer-links a {
+    color: #10c906; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-links a:hover {
+    color: #e91e63; /* Color change on hover */
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px; /* Further reduce padding for very small screens */
+    }
+
+    .long-image {
+        margin-top: 15px; /* Adjust margin for smaller screens */
+    }
+
+    .download-button {
+        padding: 10px 20px; /* Adjust button padding for smaller screens */
+        font-size: 0.9em; /* Slightly smaller font size */
+    }
+}
